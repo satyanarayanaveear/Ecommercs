@@ -1,17 +1,35 @@
-<mat-drawer-container class="example-container">
+<mat-drawer-container class="example-container" >
    
-      <mat-drawer-content>
+      <mat-drawer-content   class="sidebar" mode="side" >
         
             <mat-list>
-                <mat-list-item>Item 1</mat-list-item>
+                <mat-list-item class="actionLink" [routerLink]="['./products']" >
+                  products
+                </mat-list-item>
                 <mat-divider></mat-divider>
-                <mat-list-item>Item 2</mat-list-item>
+                
                 <mat-divider></mat-divider>
-                <mat-list-item>Item 3</mat-list-item>
                 <mat-divider></mat-divider>
-                <mat-list-item>Item 4</mat-list-item>
+                <mat-list-item> </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> </mat-list-item>
+
               </mat-list>
-              
+              <mat-drawer-content>
+             
+            </mat-drawer-content>
       </mat-drawer-content>
   </mat-drawer-container>
   

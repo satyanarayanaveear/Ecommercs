@@ -1,3 +1,44 @@
-p{
+body{
     margin-left: -184px;
+}
+.example-card {
+    max-width: 300px;
+    height: 300px;
+    display:inline-block;
+    text-overflow:initial ;
+    margin-right: 35px;
+    margin-bottom: 25px;
+    
+   
+}
+.example-header-image {
+    background-size: 20px !important;
+}
+img{
+  max-width: 200px;
+  max-height:100px;
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
+h2{
+  text-align: center;
+  color: rgb(158, 116, 116);
+}
+.row{
+   padding-left:20px;
+   flex-grow: 4 important; 
+
+}
+.text{
+    font-size: 10px;
+}
+mat-card-footer{
+    padding-left:18px
+}
+mat-card-subtitle{
+    margin-left: -14px;
+}
+.actionLink{
+
+margin-left:700px
 }

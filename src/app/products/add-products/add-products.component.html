@@ -1,1 +1,58 @@
-<p>add-products works!</p>
+<body>
+    <div>
+    <mat-card style="margin-left:30px;margin-top: 20px;">
+    <form [formGroup]="AddProductsFrom" (submit)="createUser()">
+        <h2 style="padding-left:400px">Add products</h2>
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>title</mat-label>
+            <input matInput placeholder="title" formControlName="title">
+            <mat-icon matSuffix></mat-icon>
+            <mat-error *ngIf="AddProductsFrom.controls['title'].errors && AddProductsFrom.controls['title'].hasError('required')">
+                first name required</mat-error>
+               <mat-error *ngIf="AddProductsFrom.controls['title'].errors && AddProductsFrom.controls['title'].hasError('maxLength')">
+                first name not valid </mat-error>
+        </mat-form-field>
+    </p> 
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>price</mat-label>
+            <input matInput placeholder="price" formControlName="price">
+            <mat-icon matSuffix></mat-icon>
+            <mat-error *ngIf="AddProductsFrom.controls['price'].errors && AddProductsFrom.controls['price'].hasError('required')">
+                last name required</mat-error>
+               <mat-error *ngIf="AddProductsFrom.controls['price'].errors && AddProductsFrom.controls['price'].hasError('maxLength')">
+                last name not not valid</mat-error>
+        </mat-form-field>
+    </p> 
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>category</mat-label>
+            <input matInput placeholder="category" formControlName="category">
+            <mat-icon matSuffix>mark_as_unread</mat-icon>
+            <mat-error *ngIf="AddProductsFrom.controls['category'].errors && AddProductsFrom.controls['category'].hasError('required')">
+                email address required</mat-error>
+               <mat-error *ngIf="AddProductsFrom.controls['category'].errors && AddProductsFrom.controls['category'].hasError('maxLength')">
+                email address not valid</mat-error>
+        </mat-form-field>
+    </p> 
+    <p class="pdf">
+    
+        <input type="file" placeholder="add image" formControlName="image">
+        <mat-error *ngIf="AddProductsFrom.controls['image'].errors && AddProductsFrom.controls['image'].hasError('required')">
+            image required</mat-error>
+           <mat-error *ngIf="AddProductsFrom.controls['image'].errors && AddProductsFrom.controls['image'].hasError('file')">
+            image not uploaded</mat-error>
+        
+    </p> 
+
+    <p >
+        <button  mat-raised-button class="btn" [disabled]="!AddProductsFrom.valid">Add Product</button>
+    </p>
+ </form>
+</mat-card>
+
+
+</div>
+
+</body>

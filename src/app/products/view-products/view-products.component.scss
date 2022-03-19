@@ -4,7 +4,24 @@ body{
     width: 100%;
     height: 520px;
     padding-top: -10%!important;
-    
-      overflow: hidden; /* Hide scrollbars */
-      
 }
+mat-card {
+ width: 100%;
+  height:550px;
+  img{
+    width: 200px;
+    height:270px;
+    margin-left:40px;
+  }
+  .title , h2 ,p {
+    padding-left:10px;
+  }
+  mat-card-footer{
+     padding-left:20px;
+  }
+  
+  
+  }
+
+
+

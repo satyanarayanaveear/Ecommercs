@@ -1,1 +1,42 @@
-<p>update-products works! :{{ UpdateId }}</p>
+
+<body>
+    
+    <mat-card>
+    
+    <div *ngIf="dataLoaded">
+    <form   [formGroup]="updateProduct" (submit)="UpdateProducts()">
+    
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>title</mat-label>
+                <input matInput placeholder="title" formControlName="title">
+                <mat-icon matSuffix></mat-icon>
+            </mat-form-field>
+        </p> 
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>price</mat-label>
+                <input matInput placeholder="price" formControlName="price">
+                <mat-icon matSuffix></mat-icon>
+            </mat-form-field>
+        </p> 
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>category</mat-label>
+                <input matInput placeholder="category" formControlName="category">
+                <mat-icon matSuffix></mat-icon>
+            </mat-form-field>
+        </p> 
+        <p class="pdf">
+        
+           
+            
+        </p> 
+    
+        <p >
+            <button  mat-raised-button class="btn" [disabled]="!updateProduct.valid">UpdateProduct</button>
+        </p>
+    </form>
+    </div>
+    </mat-card>
+</body>
